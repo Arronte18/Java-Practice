@@ -34,6 +34,7 @@ public class arrays {
 
         //---------------------------------------------------------------
         System.out.println("---------------------------------------------");
+        //array functionality
 
         int [] testy = getRandomArray(12);
         //modified merge sort that runs at n*logn
@@ -63,6 +64,33 @@ public class arrays {
 
         int[] largerArrray = Arrays.copyOf(thirdArray, 20);
         System.out.println(Arrays.toString(largerArrray));
+
+        //-------------------------------------------------
+        System.out.println("---------------------------------------------------");
+        //array binary search
+        //array must be sorted for binary search to work
+        //multiple same target values could return random duplicate index
+        //returns index of target value
+
+        String[] sArray = {"Able", "Jane", "Mark", "Ralph", "David"};
+        Arrays.sort(sArray);
+        System.out.println(Arrays.toString(sArray));
+        if(Arrays.binarySearch(sArray, "Mark") >= 0){
+            System.out.println("Found Mark in the list");
+
+        }
+
+        int[] s1 = {1,2,3,4,5};
+        int[] s2 = {1,2,3,4,5};
+        // returns true on ordered arrays of equal size
+        if(Arrays.equals(s1, s2)){
+            System.out.println("arrays are equal");
+        }else {
+            System.out.println("Arrays are not equal");
+        }
+
+        //to print array use Arrays.toString(array);
+        //to print multidimenstional arrays use Arrays.deepToString(array2d);
         
     }
     private static int[] getRandomArray(int len){

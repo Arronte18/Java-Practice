@@ -50,7 +50,7 @@ public class ArrayLists {
 
         groceries.add("yogurt");
         System.out.println("first = " + groceries.indexOf("yogurt"));
-        System.out.println("first = " + groceries.lastIndexOf("yogurt"));
+        System.out.println("last = " + groceries.lastIndexOf("yogurt"));
 
 
         System.out.println(groceries);
